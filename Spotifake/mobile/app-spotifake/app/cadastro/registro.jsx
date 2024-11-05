@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Pressable, TextInput, StyleSheet, StatusBar, Button } from 'react-native';
+import { View, Text, Pressable, TextInput, StyleSheet, StatusBar, Button, Link } from 'react-native';
 import { useState } from 'react';
 import { useFonts } from 'expo-font';
 
@@ -39,7 +39,6 @@ export default function Registro() {
     if (!fontsLoaded) {
         return null;
     }
-
 
     const connect = async () => {
         try {
@@ -129,7 +128,6 @@ export default function Registro() {
                     </Text>
                 </Pressable>
             </View>
-
         </View>
     )
 }
@@ -140,28 +138,30 @@ const styles = StyleSheet.create({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#250902'
+        backgroundColor: '#6959CD'
     },
     botao: {
-        backgroundColor: '#800E13',
+        backgroundColor: '#483D8B',
         padding: 15,
         borderRadius: 20,
         width: 150,
         height: 80,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginBottom: 45
     },
     bpress: {
         backgroundColor: '#38040E'
     },
     input: {
-        backgroundColor: '#640D14',
+        backgroundColor: '#191970',
         height: 50,
         width: 300,
         marginBottom: 30,
         borderRadius: 30,
         color: '#FFFF',
         paddingLeft: 20,
+        paddingRight: 10,
         textAlign: 'left',
         fontFamily: 'Gotham-XLight'
     },
